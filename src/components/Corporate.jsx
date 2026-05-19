@@ -34,12 +34,12 @@ const Corporate = () => {
                 </tr>
                 <tr>
                   <th>代表者</th>
-                  <td>代表取締役 井戸下 太郎</td>
+                  <td>代表取締役 井戸下 こうし</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          
+
           <div className="corporate-features fade-in">
             <h3>いどしたビル管理の3C</h3>
             <ul className="feature-list">
