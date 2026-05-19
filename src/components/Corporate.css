@@ -1,0 +1,129 @@
+.corporate-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  padding: 100px 5%;
+}
+
+.corporate-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 36, 56, 0.85); /* ダークブルーの半透明オーバーレイ */
+  z-index: 1;
+}
+
+.corporate-container {
+  position: relative;
+  z-index: 2;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+.corporate-container .section-title {
+  color: #fff;
+}
+
+.corporate-container .section-subtitle {
+  color: var(--accent-color);
+}
+
+.corporate-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.corporate-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+}
+
+.corporate-table tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.corporate-table th {
+  width: 35%;
+  padding: 18px 20px;
+  background: rgba(100, 255, 218, 0.1);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.corporate-table td {
+  padding: 18px 20px;
+  font-size: 0.9rem;
+  color: #fff;
+  line-height: 1.7;
+}
+
+/* 3C Features */
+.corporate-features h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid var(--accent-color);
+  display: inline-block;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 22px 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--accent-color);
+  backdrop-filter: blur(5px);
+}
+
+.feature-list li:hover {
+  background: rgba(100, 255, 218, 0.1);
+  transform: translateX(4px);
+}
+
+.feature-list li strong {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  min-width: 90px;
+  flex-shrink: 0;
+}
+
+.feature-list li p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .corporate-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

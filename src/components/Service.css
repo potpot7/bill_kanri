@@ -1,0 +1,110 @@
+.service-section {
+  background-color: var(--bg-white);
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 36px;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: var(--bg-white);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-top: 4px solid transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+  border-top-color: var(--accent-color);
+}
+
+.service-image-container {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-image {
+  transform: scale(1.05);
+}
+
+.service-number {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1;
+  font-family: 'Courier New', monospace;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  background: rgba(15, 36, 56, 0.7);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.service-content {
+  padding: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card-title {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin-bottom: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.service-card-text {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 28px;
+  line-height: 1.8;
+  flex: 1;
+}
+
+.service-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-blue);
+  font-weight: 700;
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.service-link:hover {
+  color: var(--primary-color);
+}
+
+.service-link .arrow {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.service-link:hover .arrow {
+  transform: translateX(6px);
+}
